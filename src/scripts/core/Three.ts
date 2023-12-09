@@ -55,7 +55,7 @@ export abstract class Three {
     else return [1, imageAspect / screenAspect]
   }
 
-  protected render = () => {
+  protected render() {
     this.renderer.setRenderTarget(null)
     this.renderer.render(this.scene, this.camera)
   }
